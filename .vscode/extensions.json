@@ -1,0 +1,7 @@
+{
+  "recommendations": [
+    "vsciot-vscode.vscode-arduino",
+    "ms-python.python",
+    "ms-python.vscode-pylance"
+  ]
+}
