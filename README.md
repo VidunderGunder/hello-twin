@@ -20,13 +20,11 @@ Backend and microcontroller part of a minimum digital twin example.
 
 ## Quickstart
 
+### Arduino and VSCode
+
 Install [VSCode](https://code.visualstudio.com/)
 
 Install [Arduino IDE](https://www.arduino.cc/en/software)
-
-Install [Anaconda](https://www.anaconda.com/products/individual) (or any variant you prefer)
-
-### Arduino and VSCode
 
 Open VSCode
 
@@ -50,6 +48,8 @@ Run `Arduino: Change Baud Rate` and set it to `9600`
 Try running `Arduino: Send Text to Serial Port`, and turn the LED on and off by sending `H` and `L`
 
 ### Python (not needed for server)
+
+Install [Anaconda](https://www.anaconda.com/products/individual) (or any variant you prefer)
 
 Open up your terminal, and run these commands:
 
