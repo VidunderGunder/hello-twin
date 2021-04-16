@@ -106,7 +106,15 @@ ORG="hacker@mainframe.gg" # Replace
 
 ### Node
 
-Install everything:
+Install [Node](https://nodejs.org/en/) (recommended version).
+
+Install Yarn:
+
+```shell
+npm install --global yarn
+```
+
+Install dependencies:
 
 ```shell
 yarn
