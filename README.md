@@ -137,7 +137,7 @@ Run development server:
 yarn run dev
 ```
 
-You'll get some errors - don't worry.
+You'll likely get some errors - don't worry.
 
 Open `src/index.ts` and save the file.
 

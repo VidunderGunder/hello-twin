@@ -4,9 +4,15 @@ import express from "express";
 const app = express();
 const port = process.env.PORT;
 
+/**
+ * Hello World for sanity test
+ */
 app.get("/", (_, res) => res.send("Hello Twin!"));
 app.post("/", (_, res) => res.send("Hello Twin!"));
 
+/**
+ * Turn LED on (1) or off (0)
+ */
 app.post("/led/:on", (req, res) => {
   const on = parseInt(req.params.on);
   switch (on) {
@@ -24,11 +30,17 @@ app.post("/led/:on", (req, res) => {
   }
 });
 
+/**
+ * Reset Arduino
+ */
 app.post("/reset", (_, res) => {
   reset();
   res.send();
 });
 
+/**
+ * Get milliseconds since startup from Arduino
+ */
 app.get("/millis", async (_, res) => {
   const ms = await millis();
   res.send(ms);
