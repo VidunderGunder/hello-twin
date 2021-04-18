@@ -49,6 +49,8 @@ Run `Arduino: Open Serial Monitor`
 
 If successful, you should be able to run `Arduino: Send Text to Serial Port`, and turn the LED on and off by sending `H` and `L`
 
+Run `Arduino: Close Serial Monitor`
+
 ### Python (not needed for server)
 
 Install [Anaconda](https://www.anaconda.com/products/individual) (or any variant you prefer)
@@ -109,6 +111,12 @@ ORG="hacker@mainframe.gg" # Replace
 
 ### Node
 
+Add a port to your `.env`-file:
+
+```env
+PORT="8080"
+```
+
 Install [Node](https://nodejs.org/en/) (recommended version).
 
 Install Yarn:
@@ -129,14 +137,16 @@ Run development server:
 yarn run dev
 ```
 
-The server starts in `src/index.ts`.
+You'll get some errors - don't worry.
+
+Open `src/index.ts` and save the file.
 
 You can test queries with [Insomnia](https://insomnia.rest/download) (or [Postman](https://www.postman.com/downloads/), if you prefer).
 
 ## Heads-Up
 
+If you get permission denied when doing anything COM-port related, make sure you close all active processes using the COM (e.g., Interactive Python or the Arduino Serial Monitor), and try again.
+
 This project formats Python code with *black*, so accept installing it if prompted by VSCode, if you want auto-formatting.
 
 In general, you should accept what VSCode recommends you to install, unless you know what you're doing.
-
-If you get permission denied when doing anything COM-port related, make sure you close all active processes using the COM (e.g., Interactive Python or the Arduino Serial Monitor), and try again.
