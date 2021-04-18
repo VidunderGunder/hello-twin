@@ -1,5 +1,3 @@
 {
-    "jupyter.jupyterServerType": "local",
-    "python.pythonPath": "C:\\Users\\Kristian\\.conda\\envs\\arduino\\python.exe",
-    "typescript.tsdk": "node_modules\\typescript\\lib"
+  "typescript.tsdk": "node_modules\\typescript\\lib"
 }

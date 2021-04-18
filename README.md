@@ -32,7 +32,7 @@ Install recommended extensions (most importantly [Arduino](https://marketplace.v
 
 Run `Arduino: Board Config`
 
-Choose Arduino UNO
+Choose Arduino UNO (or the type you have on hand)
 
 Run `Arduino: Select Serial Port` and choose your Arduino's port  
 *Remember the port, as we'll need it later*
@@ -43,9 +43,11 @@ Run `Arduino: Initialize`
 
 Upload `DemoTwin.ino` to your board
 
-Run `Arduino: Change Baud Rate` and set it to `9600`
+Run `Arduino: Change Baud Rate` and ensure it's set to `115200`
 
-Try running `Arduino: Send Text to Serial Port`, and turn the LED on and off by sending `H` and `L`
+Run `Arduino: Open Serial Monitor`
+
+If successful, you should be able to run `Arduino: Send Text to Serial Port`, and turn the LED on and off by sending `H` and `L`
 
 ### Python (not needed for server)
 
@@ -85,17 +87,18 @@ Run cell by cell with IPython.
 
 Choose Azure as your bucket if prompted and you're not sure.
 
-Go to `Load Data -> Buckets` and press `Create Bucket`.
+Go to `Data -> Buckets` and press `Create Bucket`.  
+<small>*Note: `Load Data`, `Data` and `Load your data` are equivalent.*</small>
 
 Call it `HelloTwin Bucket`.
 
-Go to `Load Data -> Tokens` and press `Generate Token`, and pick `Read/Write Token`.
+Go to `Data -> Tokens` and press `Generate Token`, and pick `Read/Write Token`.
 
 Set description as `HelloTwin` and enable read and write access to `HelloTwin Bucket`.
 
 Click on the token you created and `Copy to Clipboard`.
 
-*Add* the following to your `.env`-file, with *your* info:
+*Add* the following to your `.env`-file, with *your* info (can be found in all examples for loading data under `Data -> Client Libraries`):
 
 ```env
 BUCKET="HelloTwin Bucket"
@@ -111,7 +114,7 @@ Install [Node](https://nodejs.org/en/) (recommended version).
 Install Yarn:
 
 ```shell
-npm install --global yarn
+npm i -g yarn
 ```
 
 Install dependencies:
