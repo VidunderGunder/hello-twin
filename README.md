@@ -1,5 +1,7 @@
 # Hello Twin (Backend + MCU) <!-- omit in toc -->
 
+[Video](https://youtu.be/S07OMZwGjOs)
+
 Backend and microcontroller part of a minimum digital twin example.
 
 [Unity part here](https://github.com/VidunderGunder/hello-twin-unity)
